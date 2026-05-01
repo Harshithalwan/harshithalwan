@@ -1,0 +1,17 @@
+{
+	"/": [],
+	"/blogs": [
+		"src/routes/blogs/+page.server.ts"
+	],
+	"/blogs/[slug]": [
+		"src/routes/blogs/[slug]/+page.ts",
+		"src/routes/blogs/[slug]/+page.server.ts"
+	],
+	"/papers": [
+		"src/routes/papers/+page.server.ts"
+	],
+	"/papers/[slug]": [
+		"src/routes/papers/[slug]/+page.ts",
+		"src/routes/papers/[slug]/+page.server.ts"
+	]
+}
