@@ -1,126 +1,59 @@
-# Portfolio Application
+# Hi, I'm Harshit Halwan 👋
 
-A minimal and elegant portfolio built with SvelteKit, Tailwind CSS, and TypeScript.
+**Software Engineer specializing in AI/ML and Full-Stack Development**
 
-## Features
-
-- **Homepage**: About me section with experience, skills, education, and projects
-- **Blog**: File-based blog with Markdown support
-- **Papers**: Technical paper analysis with Markdown support
-- **Dark/Light Mode**: Theme toggle with system preference detection
-- **Responsive Design**: Mobile-first approach with clean typography
-- **Fast Performance**: Built with SvelteKit and Vite
-
-## Tech Stack
-
-- **Framework**: SvelteKit
-- **Styling**: Tailwind CSS with typography plugin
-- **Content**: Markdown files with frontmatter
-- **Build Tool**: Vite
-- **Package Manager**: npm
-
-## Getting Started
-
-### Installation
-
-```bash
-npm install
-```
-
-### Development
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-### Build
-
-```bash
-npm run build
-```
-
-### Preview
-
-```bash
-npm run preview
-```
-
-## Adding Content
-
-### Blog Posts
-
-Create a new Markdown file in `src/content/blogs/`:
-
-```markdown
----
-title: "Your Post Title"
-date: "2024-12-15"
-excerpt: "A brief description of your post"
-tags: ["Tag1", "Tag2"]
 ---
 
-Your content here...
-```
+## About Me
 
-The filename (without `.md`) becomes the URL slug. For example, `my-post.md` becomes `/blogs/my-post`.
+I'm a software engineer based in Delhi with over five years of experience building scalable web applications and working on AI/ML projects. Currently pursuing my M.Tech. in AI & Machine Learning at BITS Pilani, I'm deeply passionate about the intersection of software engineering and artificial intelligence.
 
-### Paper Analyses
+My journey has taken me through various roles—from building enterprise applications at Cvent to leading teams at Turing Remote, where I work with cutting-edge AI companies to improve LLM performance. I've developed a strong foundation in full-stack development, test automation, and distributed systems.
 
-Create a new Markdown file in `src/content/papers/`:
-
-```markdown
----
-title: "Paper Title"
-authors: "Author Names"
-year: 2024
-paperUrl: "https://example.com/paper"
-excerpt: "Brief analysis summary"
-tags: ["Tag1", "Tag2"]
 ---
 
-Your analysis content...
-```
+## Contact
 
-The filename becomes the URL slug. For example, `attention-is-all-you-need.md` becomes `/papers/attention-is-all-you-need`.
+- **Email**: [harshithalwan@gmail.com](mailto:harshithalwan@gmail.com)
+- **LinkedIn**: [linkedin.com/in/harshithalwan](https://linkedin.com/in/harshithalwan)
+- **GitHub**: [github.com/Harshithalwan](https://github.com/Harshithalwan)
 
-## Project Structure
+---
 
-```
-src/
-├── lib/
-│   ├── components/      # Reusable UI components
-│   ├── stores/          # Svelte stores (theme)
-│   └── utils/           # Utility functions
-├── routes/
-│   ├── +layout.svelte   # Main layout
-│   ├── +page.svelte     # Homepage
-│   ├── blogs/           # Blog section
-│   │   ├── +page.svelte
-│   │   └── [slug]/      # Individual blog posts
-│   └── papers/          # Papers section
-│       ├── +page.svelte
-│       └── [slug]/      # Individual paper analyses
-└── content/
-    ├── blogs/           # Blog Markdown files
-    └── papers/          # Paper Markdown files
-```
+## Experience
 
-## Customization
+### Software Engineer — Turing Remote
+*Jul 2024 – Present*
 
-### Theme Colors
+- Led a team of six managing project delivery for Anthropic
+- Improved LLM model performance by creating high-quality technical datasets
+- Enhanced RLHF evaluation tools, increasing evaluator productivity by 40%
 
-Edit `tailwind.config.js` to customize colors and typography.
+### Software Engineer 2 — Cvent Inc
+*Jan 2022 – Oct 2023*
 
-### Personal Information
+- Revamped decade-old application from ASP to modern React/NextJS
+- Led SQL Server to PostgreSQL migration, improving efficiency by 40%
+- Reduced UI page load times by 50% and API response times by 30%
 
-Edit `src/routes/+page.svelte` to update your personal information and experience.
+---
 
-### Contact Links
+## Education
 
-Update the links in the header and homepage to point to your profiles.
+| Degree | Institution | Period |
+|--------|-------------|--------|
+| **M.Tech. Artificial Intelligence & Machine Learning** | Birla Institute of Technology and Science, Pilani | 2024 – 2026 |
+| **Master of Computer Applications** | University of Delhi | 2017 – 2020 |
+| **Bachelors in Physics** | University of Delhi | 2013 – 2016 |
 
-## License
+---
 
-MIT
+## Skills
+
+**Languages**: Java, JavaScript, TypeScript, Python
+
+**Frameworks**: React, NextJS, Dropwizard, JEST, WDIO
+
+**Databases**: PostgreSQL, SQL Server, Couchbase, MongoDB
+
+**Tools & Infrastructure**: Docker, AWS, Jenkins, GraphQL, RabbitMQ, ElasticSearch
