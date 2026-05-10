@@ -1,17 +1,24 @@
 {
-	"/": [],
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
 	"/blogs": [
-		"src/routes/blogs/+page.server.ts"
+		"src/routes/blogs/+page.server.ts",
+		"src/routes/+layout.ts"
 	],
 	"/blogs/[slug]": [
 		"src/routes/blogs/[slug]/+page.ts",
-		"src/routes/blogs/[slug]/+page.server.ts"
+		"src/routes/blogs/[slug]/+page.server.ts",
+		"src/routes/+layout.ts"
 	],
 	"/papers": [
-		"src/routes/papers/+page.server.ts"
+		"src/routes/papers/+page.server.ts",
+		"src/routes/+layout.ts"
 	],
 	"/papers/[slug]": [
 		"src/routes/papers/[slug]/+page.ts",
-		"src/routes/papers/[slug]/+page.server.ts"
+		"src/routes/papers/[slug]/+page.server.ts",
+		"src/routes/+layout.ts"
 	]
 }
