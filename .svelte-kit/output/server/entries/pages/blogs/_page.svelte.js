@@ -1,4 +1,4 @@
-import { c as create_ssr_component, e as escape, d as each, v as validate_component } from "../../../chunks/ssr.js";
+import { c as create_ssr_component, e as escape, b as each, v as validate_component } from "../../../chunks/ssr.js";
 function formatDate(dateStr) {
   return new Date(dateStr).toLocaleDateString("en-US", {
     year: "numeric",

@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as each, e as escape } from "../../chunks/ssr.js";
+import { c as create_ssr_component, b as each, e as escape } from "../../chunks/ssr.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   const experience = [
     {
@@ -11,15 +11,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         "Enhanced RLHF evaluation tools, increasing evaluator productivity by 40%"
       ]
     },
-    {
-      title: "Senior Software Engineer",
-      company: "GigaIntel Innovations",
-      period: "Feb 2024 – Jul 2024",
-      highlights: [
-        "Built a trademark similarity search engine using ML algorithms",
-        "Reduced manual research efforts by 70%"
-      ]
-    },
+    // {
+    //   title: "Senior Software Engineer",
+    //   company: "GigaIntel Innovations",
+    //   period: "Feb 2024 – Jul 2024",
+    //   highlights: [
+    //     "Built a trademark similarity search engine using ML algorithms",
+    //     "Reduced manual research efforts by 70%"
+    //   ]
+    // },
     {
       title: "Software Engineer 2",
       company: "Cvent Inc",

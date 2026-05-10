@@ -1,4 +1,4 @@
-import { c as create_ssr_component, e as escape, f as add_attribute, d as each, v as validate_component } from "../../../chunks/ssr.js";
+import { c as create_ssr_component, e as escape, d as add_attribute, b as each, v as validate_component } from "../../../chunks/ssr.js";
 function truncateExcerpt(text, maxLength = 150) {
   if (text.length <= maxLength) return text;
   return text.substring(0, maxLength) + "...";
