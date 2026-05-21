@@ -1,9 +1,9 @@
-import { getAllBlogs } from '$lib/utils/posts';
+import { getAllBlogs } from "$lib/utils/posts";
 
 export function load() {
   const blogs = getAllBlogs();
-  
+
   return {
-    blogs
+    blogs,
   };
 }
