@@ -7,8 +7,6 @@ excerpt: "A comprehensive analysis of BERT, which introduced bidirectional pre-t
 tags: ["BERT", "NLP", "Pre-training", "Fine-tuning"]
 ---
 
-# BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
-
 ## Overview
 
 BERT (Bidirectional Encoder Representations from Transformers) introduced a revolutionary approach to language model pre-training. Published by Google in 2018, it achieved state-of-the-art results on 11 NLP tasks and changed the field's approach to transfer learning in NLP.

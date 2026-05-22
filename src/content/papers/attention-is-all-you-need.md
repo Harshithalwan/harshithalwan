@@ -7,8 +7,6 @@ excerpt: "The seminal paper that introduced the Transformer architecture, revolu
 tags: ["Transformers", "NLP", "Deep Learning"]
 ---
 
-# Attention Is All You Need - Paper Analysis
-
 ## Overview
 
 "Attention Is All You Need" by Vaswani et al. (2017) introduced the Transformer architecture, which has since become the foundation for virtually all modern large language models. This analysis covers the key innovations and their implications.

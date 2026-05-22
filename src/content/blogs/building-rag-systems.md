@@ -5,8 +5,6 @@ excerpt: "A deep dive into Retrieval-Augmented Generation, exploring how to comb
 tags: ["AI", "RAG", "Machine Learning"]
 ---
 
-# Building RAG Systems: A Practical Guide
-
 Retrieval-Augmented Generation (RAG) has emerged as one of the most practical approaches to building AI systems that can answer questions about specific documents or knowledge bases. In this post, I'll share what I've learned from building Quill, a document chat application.
 
 ## What is RAG?

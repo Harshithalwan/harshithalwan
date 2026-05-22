@@ -5,8 +5,6 @@ excerpt: "Reflecting on my experience transitioning a monolithic application to 
 tags: ["Architecture", "Microservices", "Backend"]
 ---
 
-# Lessons from Migrating to Microservices
-
 When I joined Cvent, I inherited a decade-old monolithic application that was showing its age. Over two years, our team successfully transitioned it to a modular microservices architecture. Here's what I learned.
 
 ## Why We Migrated
