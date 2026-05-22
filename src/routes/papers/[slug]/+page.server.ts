@@ -1,5 +1,5 @@
 import { error } from "@sveltejs/kit";
-import { getPaperBySlug } from "$lib/utils/posts";
+import { getAllPapers, getPaperBySlug } from "$lib/utils/posts";
 
 export async function load({ params }) {
   const paper = getPaperBySlug(params.slug);
@@ -11,4 +11,9 @@ export async function load({ params }) {
   return {
     paper,
   };
+}
+export const prerender = true;
+
+export function entries() {
+  return getAllPapers().map((paper) => ({ slug: paper.slug }));
 }

@@ -18,7 +18,7 @@
 
   <footer class="border-t border-[var(--color-border)] py-8 mt-16">
     <div class="container-narrow text-center text-[var(--color-text-muted)] text-sm">
-      <p>&copy; {new Date().getFullYear()} Harshit Halwan. Built with Svelte & Tailwind.</p>
+      <p>&copy; {new Date().getFullYear()} Harshit Halwan.</p>
     </div>
   </footer>
 </div>

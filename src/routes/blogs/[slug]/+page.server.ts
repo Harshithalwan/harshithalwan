@@ -1,5 +1,5 @@
 import { error } from "@sveltejs/kit";
-import { getBlogBySlug } from "$lib/utils/posts";
+import { getAllBlogs, getBlogBySlug } from "$lib/utils/posts";
 
 export async function load({ params }) {
   const blog = getBlogBySlug(params.slug);
@@ -11,4 +11,9 @@ export async function load({ params }) {
   return {
     blog,
   };
+}
+export const prerender = true;
+
+export function entries() {
+  return getAllBlogs().map((blog) => ({ slug: blog.slug }));
 }
