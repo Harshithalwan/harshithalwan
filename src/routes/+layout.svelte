@@ -16,7 +16,7 @@
     <slot />
   </main>
 
-  <footer class="border-t border-[var(--color-border)] py-8 mt-16">
+  <footer class="border-t border-[var(--color-border)] bg-[var(--color-card)] py-8">
     <div class="container-narrow text-center text-[var(--color-text-muted)] text-sm">
       <p>&copy; {new Date().getFullYear()} Harshit Halwan.</p>
     </div>

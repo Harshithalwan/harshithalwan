@@ -8,7 +8,7 @@
 
 <button
   on:click={toggle}
-  class="p-2 rounded-lg hover:bg-[var(--color-card)] transition-colors"
+  class="p-2 rounded-full hover:bg-[var(--color-surface)] transition-colors"
   aria-label="Toggle theme"
 >
   {#if $theme === 'dark'}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,29 +6,53 @@
 
 @layer base {
   :root {
-    --color-bg: #ffffff;
-    --color-text: #1a1a1a;
-    --color-text-muted: #6b7280;
-    --color-border: #e5e7eb;
-    --color-card: #f9fafb;
+    color-scheme: light;
+    --color-bg: #f8f5ee;
+    --color-text: #171717;
+    --color-text-muted: #65635f;
+    --color-border: #d7d0c5;
+    --color-card: #fffdf8;
+    --color-surface: #f0eadf;
+    --color-surface-raised: #fffdf8;
+    --color-grid: rgba(23, 23, 23, .095);
+    --color-shadow: #171717;
+    --color-header: rgba(255, 253, 248, .86);
+    --color-accent: #397740;
+    --color-accent-soft: #d9efdc;
+    --color-grid-canvas: rgba(91, 182, 100, .2);
+    --color-blue: #26643d;
+    --color-yellow: #b9df86;
   }
 
   .dark {
-    --color-bg: #0f0f0f;
-    --color-text: #f5f5f5;
-    --color-text-muted: #9ca3af;
-    --color-border: #2d2d2d;
-    --color-card: #1a1a1a;
+    color-scheme: dark;
+    --color-bg: #101214;
+    --color-text: #f4f0e8;
+    --color-text-muted: #aaa69e;
+    --color-border: #373b40;
+    --color-card: #1a1d20;
+    --color-surface: #15181b;
+    --color-surface-raised: #1d2024;
+    --color-grid: rgba(255, 255, 255, .075);
+    --color-shadow: #050607;
+    --color-header: rgba(26, 29, 32, .88);
+    --color-accent: #8ed495;
+    --color-accent-soft: #25472d;
+    --color-grid-canvas: rgba(114, 207, 123, .16);
+    --color-blue: #48a85c;
+    --color-yellow: #a8d978;
   }
 
   body {
     @apply bg-[var(--color-bg)] text-[var(--color-text)] transition-colors duration-300;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    min-width: 320px;
   }
 }
 
 @layer components {
   .container-narrow {
-    @apply max-w-3xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
   .nav-link {
