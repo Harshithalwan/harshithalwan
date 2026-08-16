@@ -16,7 +16,7 @@
     tags: string[];
   };
 
-  const roles = ['AI / ML ENGINEER', 'FULL-STACK BUILDER', 'SYSTEMS THINKER', 'TECHNICAL LEAD'];
+  const roles = ['GENERALIST', 'FULL-STACK Engineer', 'AI / ML ENGINEER', 'SYSTEMS THINKER', 'TECHNICAL LEAD'];
   const roleLoop = [...roles, roles[0]];
   let roleIndex = 0;
   let animateRole = true;
