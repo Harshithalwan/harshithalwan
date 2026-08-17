@@ -26,17 +26,17 @@
 
   const journey: JourneyItem[] = [
     {
-      year: '2013—16', short: 'PHYSICS', title: 'Bachelor of Science in Physics', organization: 'University of Delhi', location: 'New Delhi, India', kind: 'EDUCATION', logo: '/logos/university-delhi.png', logoClass: 'logo-du',
-      summary: 'Started with physics—learning to reduce complicated systems to a few clear principles and testable ideas.',
+      year: '2013-16', short: 'PHYSICS', title: 'Bachelor of Science in Physics', organization: 'University of Delhi', location: 'New Delhi, India', kind: 'EDUCATION', logo: '/logos/university-delhi.png', logoClass: 'logo-du',
+      summary: 'Started with physics-learning to reduce complicated systems to a few clear principles and testable ideas.',
       bullets: ['Built a quantitative foundation through mathematics, experimentation, and physical systems.', 'Developed the analytical mindset that later carried naturally into software engineering.'], tags: ['PHYSICS', 'MATHEMATICS', 'ANALYTICAL THINKING']
     },
     {
-      year: '2017—20', short: 'DU', title: 'Master of Computer Applications', organization: 'Department of Computer Science, University of Delhi', location: 'New Delhi, India', kind: 'EDUCATION', logo: '/logos/university-delhi.png', logoClass: 'logo-du',
+      year: '2017-20', short: 'DU', title: 'Master of Computer Applications', organization: 'Department of Computer Science, University of Delhi', location: 'New Delhi, India', kind: 'EDUCATION', logo: '/logos/university-delhi.png', logoClass: 'logo-du',
       summary: 'Built a rigorous computer-science foundation before moving into large-scale product engineering.',
       bullets: ['Studied at the Department of Computer Science.', 'Developed the systems and software fundamentals that shaped my engineering career.'], tags: ['COMPUTER SCIENCE', 'SYSTEMS', 'SOFTWARE ENGINEERING']
     },
     {
-      year: '2020—23', short: 'CVENT', title: 'Software Engineer II', organization: 'Cvent Inc', location: 'Gurugram, India', kind: 'EXPERIENCE', logo: '/logos/cvent.png',
+      year: '2020-23', short: 'CVENT', title: 'Software Engineer II', organization: 'Cvent Inc', location: 'Gurugram, India', kind: 'EXPERIENCE', logo: '/logos/cvent.png',
       summary: 'Promoted from intern while modernizing an enterprise hospitality platform used by hundreds of thousands of people.',
       bullets: ['Migrated SQL Server to PostgreSQL with RabbitMQ synchronization, achieving 99.99% database availability.', 'Replaced ASP.NET Web Forms with Java microservices and a Next.js/React frontend.', 'Cut UI load times by 50% and API response times by 30%.'], tags: ['JAVA', 'NEXT.JS', 'POSTGRESQL', 'RABBITMQ']
     },
@@ -46,30 +46,34 @@
       bullets: ['Built a trademark similarity-search platform and its React/Next.js interface.', 'Reduced researchers’ manual trademark review time by 70%.'], tags: ['PYTHON', 'NEXT.JS', 'REACT', 'SEARCH']
     },
     {
-      year: '2024', short: 'PALSPAY', title: 'Freelance Software Engineer', organization: 'Palspay — Expense Splitting', location: 'Delhi / Remote', kind: 'EXPERIENCE', mark: 'P',
+      year: '2024', short: 'PALSPAY', title: 'Freelance Software Engineer', organization: 'Palspay - Expense Splitting', location: 'Delhi / Remote', kind: 'EXPERIENCE', mark: 'P',
       summary: 'Built the backend for Palspay, an expense-splitting application designed around shared money and group coordination.',
       bullets: ['Built a Python and MongoDB backend supporting groups, shared balances, group wallets, and in-app settlements.', 'Integrated Razorpay to enable money transfers inside the application.'], tags: ['PYTHON', 'MONGODB', 'RAZORPAY', 'FINTECH']
     },
     {
-      year: '2024—26', short: 'TURING', title: 'Team Lead', organization: 'Turing', location: 'Remote', kind: 'EXPERIENCE', logo: '/logos/turing.png', logoClass: 'logo-turing',
+      year: '2024-26', short: 'TURING', title: 'Team Lead', organization: 'Turing', location: 'Remote', kind: 'EXPERIENCE', logo: '/logos/turing.png', logoClass: 'logo-turing',
       summary: 'Led model-evaluation work at the frontier of code generation and LLM post-training.',
       bullets: ['Promoted within six months to lead a six-person team, reducing rework from 20% to below 10%.', 'Integrated an LLM-as-a-judge workflow that reduced review time by more than 50%.', 'Evaluated production-scale code-generation systems across HTML, React, Java, and Svelte.'], tags: ['RLHF', 'LLM EVALUATION', 'RL GYMS', 'TEAM LEADERSHIP']
     },
     {
-      year: '2024—26', short: 'BITS', title: 'M.Tech. Artificial Intelligence & Machine Learning', organization: 'BITS Pilani — WILP', location: 'Pilani, India', kind: 'EDUCATION', logo: '/logos/bits-pilani.png',
+      year: '2024-26', short: 'BITS', title: 'M.Tech. Artificial Intelligence & Machine Learning', organization: 'BITS Pilani - WILP', location: 'Pilani, India', kind: 'EDUCATION', logo: '/logos/bits-pilani.png',
       summary: 'Deepened the theory behind the intelligent systems I was already helping build in practice.',
       bullets: ['Postgraduate study in artificial intelligence and machine learning.', 'Bridged academic ML foundations with hands-on work in evaluation, reinforcement learning, and RAG.'], tags: ['AI / ML', 'REINFORCEMENT LEARNING', 'WILP']
     }
   ];
 
   const journeyPositions = [
-    { x: 4.5, y: 24 }, { x: 21, y: 76 }, { x: 36, y: 24 }, { x: 51, y: 76 },
-    { x: 66, y: 24 }, { x: 81, y: 76 }, { x: 95.5, y: 24 }
+    { x: 10, y: 18 }, { x: 45, y: 32 }, { x: 86, y: 18 }, { x: 68, y: 53.67 },
+    { x: 28, y: 50.67 }, { x: 30, y: 86 }, { x: 72, y: 83.33 }
   ];
 
-  const mobileJourneyPositions = [
-    { x: 18, y: 7 }, { x: 82, y: 21.5 }, { x: 18, y: 36 }, { x: 82, y: 50.5 },
-    { x: 18, y: 65 }, { x: 82, y: 79.5 }, { x: 18, y: 94 }
+  const journeySegments = [
+    'M100 54 C240 54 300 96 450 96',
+    'M450 96 C600 96 680 54 860 54',
+    'M860 54 C940 54 940 150 860 150 C780 150 700 170 680 150',
+    'M680 150 C540 194 440 152 280 152',
+    'M280 152 C100 152 90 250 180 258 C220 262 255 258 300 258',
+    'M300 258 C450 258 560 205 720 250'
   ];
 
   const projects = [
@@ -244,7 +248,7 @@
 </script>
 
 <svelte:head>
-  <title>Harshit Halwan — Senior Software & AI Engineer</title>
+  <title>Harshit Halwan - Senior Software & AI Engineer</title>
   <meta name="description" content="Harshit Halwan is a senior software engineer with 6+ years of experience building scalable systems and AI-powered products." />
 </svelte:head>
 
@@ -256,7 +260,7 @@
       <h1 id="hero-title">Harshit<br /><em>Halwan.</em></h1>
 
       <div class="role-console" aria-label={`Expertise: ${roles[roleIndex % roles.length]}`}>
-        <span class="console-prompt">I BUILD AS A</span>
+        <span class="console-prompt">I AM A</span>
         <div class="role-window">
           <div class:with-transition={animateRole} class="role-track" style={`transform: translateY(-${roleIndex * 1.15}em)`} on:transitionend={finishRoleTurn}>
             {#each roleLoop as role}<span>{role}</span>{/each}
@@ -274,7 +278,7 @@
 
     <div class="portrait-stage" aria-label="Illustrated portrait of Harshit Halwan">
       <div class="portrait-frame"><img src="/portrait-cartoon-v3.png" alt="Cartoon portrait of Harshit Halwan" /></div>
-      <div class="portrait-note">HELLO!<small>I MAKE THINGS WORK</small></div>
+      <div class="portrait-note">HELLO!</div>
       <div class="code-chip">&lt;/&gt;</div>
     </div>
   </section>
@@ -289,19 +293,17 @@
     </div>
 
     <div class="journey-map" aria-label="Interactive journey timeline">
-      <svg class="journey-path desktop-path" viewBox="0 0 1000 330" preserveAspectRatio="none" aria-hidden="true">
-        <path class="path-base" pathLength="100" d="M45 80 C145 80 115 250 210 250 S280 80 360 80 S435 250 510 250 S585 80 660 80 S735 250 810 250 S880 80 955 80" />
-        <path class="path-progress" pathLength="100" style={`stroke-dashoffset: ${100 - (activeIndex / (journey.length - 1)) * 100}`} d="M45 80 C145 80 115 250 210 250 S280 80 360 80 S435 250 510 250 S585 80 660 80 S735 250 810 250 S880 80 955 80" />
-      </svg>
-      <svg class="journey-path mobile-path" viewBox="0 0 360 740" preserveAspectRatio="none" aria-hidden="true">
-        <path class="path-base" pathLength="100" d="M65 52 C295 52 295 160 65 160 S65 268 295 268 S295 376 65 376 S65 484 295 484 S295 592 65 592 S65 700 295 700" />
-        <path class="path-progress" pathLength="100" style={`stroke-dashoffset: ${100 - (activeIndex / (journey.length - 1)) * 100}`} d="M65 52 C295 52 295 160 65 160 S65 268 295 268 S295 376 65 376 S65 484 295 484 S295 592 65 592 S65 700 295 700" />
+      <svg class="journey-path" viewBox="0 0 1000 300" preserveAspectRatio="none" aria-hidden="true">
+        {#each journeySegments as segment, index}
+          <path class="path-base" d={segment} />
+          <path class="path-progress" pathLength="1" style={`stroke-dashoffset: ${activeIndex > index ? 0 : 1}`} d={segment} />
+        {/each}
       </svg>
       {#each journey as item, index}
         <button
           class:active={activeIndex === index}
           class:passed={activeIndex > index}
-          style={`--x:${journeyPositions[index].x}%;--y:${journeyPositions[index].y}%;--mx:${mobileJourneyPositions[index].x}%;--my:${mobileJourneyPositions[index].y}%`}
+          style={`--x:${journeyPositions[index].x}%;--y:${journeyPositions[index].y}%`}
           on:mouseenter={() => (activeIndex = index)}
           on:focus={() => (activeIndex = index)}
           on:click={() => (activeIndex = index)}
@@ -332,7 +334,7 @@
     <div class="skills-inner">
       <div class="skills-heading">
         <div><p class="section-label">02 · THE TOOLKIT</p><h2 id="skills-title">Skills.</h2></div>
-        <p>From product interfaces to distributed backends and AI evaluation—the tools I use to move an idea into production.</p>
+        <p>From product interfaces to distributed backends and AI evaluation-the tools I use to move an idea into production.</p>
       </div>
       <div class="skills-grid">
         {#each skillGroups as group, index}
@@ -391,7 +393,7 @@
 
   .journey { width: 100%; margin: 0; padding: clamp(3.25rem, 6vw, 6.5rem) max(1.25rem, calc((100% - 1180px) / 2)); background: var(--color-card); transition: background .3s; }
   .journey-heading { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(260px, .6fr); gap: 4rem; align-items: end; }.section-label { color: var(--color-accent); }.journey-heading h2 { margin: 1rem 0 0; font: 700 clamp(2.8rem, 5.5vw, 5.4rem)/.94 'Space Grotesk', sans-serif; letter-spacing: -.065em; text-transform: uppercase; }.journey-heading > p { max-width: 430px; color: var(--color-text-muted); font-size: 1rem; line-height: 1.7; }
-  .journey-map { position: relative; width: 100%; height: clamp(300px, 29vw, 350px); margin: clamp(2.5rem, 5vw, 4.5rem) 0 1.5rem; }.journey-path { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }.journey-path path { fill: none; stroke-width: 2.4; vector-effect: non-scaling-stroke; }.path-base { stroke: var(--color-border); stroke-dasharray: 4 7; }.path-progress { stroke: var(--color-accent); stroke-dasharray: 100; stroke-linecap: round; transition: stroke-dashoffset .45s cubic-bezier(.22, .8, .3, 1); }.mobile-path { display: none; }
+  .journey-map { position: relative; width: 100%; height: clamp(300px, 28vw, 330px); margin: clamp(2.5rem, 5vw, 4.5rem) 0 1.5rem; }.journey-path { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }.journey-path path { fill: none; stroke-width: 2.4; vector-effect: non-scaling-stroke; }.path-base { stroke: var(--color-border); stroke-dasharray: 4 7; }.path-progress { stroke: var(--color-accent); stroke-dasharray: 1; stroke-linecap: round; transition: stroke-dashoffset .45s cubic-bezier(.22, .8, .3, 1); }
   .journey-map button { position: absolute; z-index: 1; left: var(--x); top: var(--y); width: 7.5rem; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; border: 0; background: none; color: var(--color-text-muted); cursor: pointer; }.journey-node { width: 2.6rem; height: 2.6rem; display: grid; place-items: center; border: 1.5px solid var(--color-border); border-radius: 50%; background: var(--color-card); transition: .25s ease; }.journey-node i { width: .55rem; height: .55rem; border-radius: 50%; background: var(--color-border); transition: .25s ease; }.journey-map button strong { margin-top: .6rem; padding: .12rem .35rem; background: var(--color-card); font-size: .68rem; letter-spacing: .06em; }.journey-map button small { padding: .06rem .35rem; background: var(--color-card); font-size: .56rem; font-weight: 700; letter-spacing: .08em; }.journey-map button:hover .journey-node, .journey-map button:focus-visible .journey-node, .journey-map button.active .journey-node { border-color: var(--color-accent); transform: translateY(-3px) scale(1.08); box-shadow: 0 5px 0 var(--color-accent-soft); }.journey-map button.active { color: var(--color-text); }.journey-map button.active .journey-node i { width: 1.15rem; height: 1.15rem; background: var(--color-accent); box-shadow: inset 0 0 0 4px var(--color-card); }.journey-map button.passed .journey-node i { background: var(--color-accent); }
   .journey-detail { min-height: 390px; display: grid; grid-template-columns: minmax(180px, .3fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 6rem); padding: clamp(1.5rem, 4vw, 3.5rem); border: 1px solid var(--color-border); border-radius: .75rem; background: var(--color-surface); box-shadow: 0 18px 60px rgb(0 0 0 / .07); animation: detail-in .35s cubic-bezier(.22, .8, .3, 1); } @keyframes detail-in { from { opacity: 0; transform: translateY(10px); } }
   .detail-brand { display: flex; flex-direction: column; justify-content: space-between; gap: 2rem; }.logo-shell { width: clamp(6rem, 11vw, 8.5rem); aspect-ratio: 1; display: grid; place-items: center; overflow: hidden; border: 1px solid var(--color-border); border-radius: .75rem; background: white; box-shadow: 5px 5px 0 var(--color-accent-soft); }.logo-shell img { width: 76%; height: 76%; object-fit: contain; }.logo-shell img[src*="cvent"] { width: 58%; height: 58%; }.logo-shell span { color: #171717; font-size: 2rem; font-weight: 800; }.detail-brand > div:last-child span { color: var(--color-accent); font-size: .64rem; font-weight: 700; letter-spacing: .15em; }.detail-brand > div:last-child p { margin-top: .35rem; color: var(--color-text-muted); font-size: .76rem; }
@@ -406,7 +408,7 @@
     .hero { grid-template-columns: 1fr; padding-top: 4rem; gap: 3.5rem; }.portrait-stage { justify-self: center; width: min(80vw, 450px); }.journey-heading, .skills-heading, .projects-heading { grid-template-columns: 1fr; gap: 1.5rem; }.journey-heading > p, .skills-heading > p, .projects-heading > p { max-width: 620px; }.journey-detail { grid-template-columns: 1fr; min-height: 0; }.detail-brand { flex-direction: row; align-items: end; }
   }
   @media (max-width: 600px) {
-    .hero { min-height: auto; padding: 3.4rem 1.1rem 4rem; } h1 { font-size: clamp(4rem, 22vw, 6rem); }.eyebrow { font-size: .57rem; }.role-console { border-radius: .7rem; box-shadow: 5px 5px 0 var(--color-accent); }.console-prompt { display: none; }.portrait-note { left: 0; }.code-chip { right: 0; }.journey { padding: 4rem 1rem; }.journey-heading { padding: 0; }.journey-map { height: 740px; margin-top: 2rem; }.desktop-path { display: none; }.mobile-path { display: block; }.journey-map button { left: var(--mx); top: var(--my); width: 7rem; }.journey-map button strong { font-size: .62rem; }.journey-detail { padding: 1.2rem; }.detail-brand { align-items: center; }.logo-shell { width: 5.2rem; }.detail-copy h3 { font-size: 2.1rem; }.summary { font-size: 1rem; }.skills-inner, .projects-inner { padding: 0 1rem; }.skills-grid { grid-template-columns: 1fr; margin-top: 3rem; }.skills-grid article:last-child { grid-column: auto; }.project-timeline { grid-template-columns: 1fr; gap: 1.25rem; padding: 0 0 0 3.5rem; }.project-timeline::before { left: 1rem; right: auto; top: 0; bottom: 0; width: 2px; height: auto; background: linear-gradient(180deg, var(--color-accent), var(--color-border)); }.project-timeline article { padding: 1.25rem; }.project-checkpoint { top: 1.2rem; left: -3.75rem; }.project-links { flex-direction: row; }
+    .hero { min-height: auto; padding: 3.4rem 1.1rem 4rem; } h1 { font-size: clamp(4rem, 22vw, 6rem); }.eyebrow { font-size: .57rem; }.role-console { border-radius: .7rem; box-shadow: 5px 5px 0 var(--color-accent); }.console-prompt { display: none; }.portrait-note { left: 0; }.code-chip { right: 0; }.journey { padding: 4rem 1rem; }.journey-heading { padding: 0; }.journey-map { height: 310px; margin-top: 2rem; }.journey-map button { width: 6.25rem; }.journey-map button strong { margin-top: .45rem; font-size: .6rem; }.journey-map button small { font-size: .53rem; }.journey-detail { padding: 1.2rem; }.detail-brand { align-items: center; }.logo-shell { width: 5.2rem; }.detail-copy h3 { font-size: 2.1rem; }.summary { font-size: 1rem; }.skills-inner, .projects-inner { padding: 0 1rem; }.skills-grid { grid-template-columns: 1fr; margin-top: 3rem; }.skills-grid article:last-child { grid-column: auto; }.project-timeline { grid-template-columns: 1fr; gap: 1.25rem; padding: 0 0 0 3.5rem; }.project-timeline::before { left: 1rem; right: auto; top: 0; bottom: 0; width: 2px; height: auto; background: linear-gradient(180deg, var(--color-accent), var(--color-border)); }.project-timeline article { padding: 1.25rem; }.project-checkpoint { top: 1.2rem; left: -3.75rem; }.project-links { flex-direction: row; }
   }
   @media (prefers-reduced-motion: reduce) { .eyebrow span, .console-cursor { animation: none; }.role-track.with-transition { transition-duration: 1ms; }.journey-detail { animation: none; } }
 </style>

@@ -5,6 +5,10 @@ excerpt: "An asthetic implementation of ant colony algorithm, and mention of som
 tags: ["AI", "HTML Canvas"]
 ---
 
+<video autoplay preload="metadata" poster="/media/blogs/ant-colony-demo.webp">
+  <source src="/media/blogs/ant-colony-demo.mp4" type="video/mp4" />
+</video>
+
 I'm a fan of procedural animations, where a few simple rules somehow create something that looks beautifully complex.
 
 Ant Colony Optimization (ACO) is one such example. Introduced in the 90s, It was pitched as an approximate solution for NP-hard problems like the Traveling Salesman Problem. I've implemented a simpler version of this algorithm. Adding the link below. It looks little choppy on mobile, Better checkout on a desktop.
