@@ -58,7 +58,7 @@
     {
       year: '2024-26', short: 'BITS', title: 'M.Tech. Artificial Intelligence & Machine Learning', organization: 'BITS Pilani - WILP', location: 'Pilani, India', kind: 'EDUCATION', logo: '/logos/bits-pilani.png',
       summary: 'Deepened the theory behind the intelligent systems I was already helping build in practice.',
-      bullets: ['Postgraduate study in artificial intelligence and machine learning.', 'Fell in Love with computer science again, learned the mathematics behind the intelligence.', 'Built multiple projects exploring various AI/ML applications, one ], tags: ['AI / ML', 'REINFORCEMENT LEARNING']
+      bullets: ['Postgraduate study in artificial intelligence and machine learning.', 'Fell in Love with computer science again, learned the mathematics behind the intelligence.', 'Built multiple projects exploring various AI/ML applications, one I am most proud of is edge visual captioning and retrieval (more details in the project section). This project has real consumer applications'], tags: ['AI / ML', 'REINFORCEMENT LEARNING']
     }
   ];
 
