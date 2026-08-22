@@ -16,7 +16,8 @@
     </p>
   </section>
 
-  // add back the check once ready data.papers.length === 0
+  <!-- add back the check once ready data.papers.length === 0 -->
+
   {#if true}
     <div class="text-center py-12">
       <p class="text-[var(--color-text-muted)]">No papers analyzed yet. Check back soon!</p>
