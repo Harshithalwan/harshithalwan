@@ -27,23 +27,23 @@
   const journey: JourneyItem[] = [
     {
       year: '2013-16', short: 'PHYSICS', title: 'Bachelor of Science in Physics', organization: 'University of Delhi', location: 'New Delhi, India', kind: 'EDUCATION', logo: '/logos/university-delhi.png', logoClass: 'logo-du',
-      summary: 'Started with physics-learning to reduce complicated systems to a few clear principles and testable ideas.',
-      bullets: ['Built a quantitative foundation through mathematics, experimentation, and physical systems.', 'Developed the analytical mindset that later carried naturally into software engineering.'], tags: ['PHYSICS', 'MATHEMATICS', 'ANALYTICAL THINKING']
+      summary: 'Started with physics, slept through most lectures. Loved the electronics lab, playing around with breadboards and oscilloscopes.',
+      bullets: ['Built a mathematical foundation, Learned to think analytically.', 'I miss Physics at time. All I have left now is youtube channels on physics entertainment. Love Veritasium, Mark Robber, ColinFurze'], tags: ['PHYSICS', 'MATHEMATICS', 'Quantum Something']
     },
     {
       year: '2017-20', short: 'DU', title: 'Master of Computer Applications', organization: 'Department of Computer Science, University of Delhi', location: 'New Delhi, India', kind: 'EDUCATION', logo: '/logos/university-delhi.png', logoClass: 'logo-du',
-      summary: 'Built a rigorous computer-science foundation before moving into large-scale product engineering.',
-      bullets: ['Studied at the Department of Computer Science.', 'Developed the systems and software fundamentals that shaped my engineering career.'], tags: ['COMPUTER SCIENCE', 'SYSTEMS', 'SOFTWARE ENGINEERING']
+      summary: 'Got into DU somehow, Built a computer-science foundation before moving into product engineering. Bunked most of the lectures.',
+      bullets: ['Studied at the Department of Computer Science.', 'What outdated course. Read about Interrupts and Exceptions a thousand times but operating systems was an interesting subject.', 'Have a vague memory of building a page replacement algorithm', 'Think about it now, had a lot of cool subjects like Compiler Design, Graphics, Networking'], tags: ['COMPUTER SCIENCE', 'SOFTWARE ENGINEERING']
     },
     {
       year: '2020-23', short: 'CVENT', title: 'Software Engineer II', organization: 'Cvent Inc', location: 'Gurugram, India', kind: 'EXPERIENCE', logo: '/logos/cvent.png',
       summary: 'Promoted from intern while modernizing an enterprise hospitality platform used by hundreds of thousands of people.',
-      bullets: ['Migrated SQL Server to PostgreSQL with RabbitMQ synchronization, achieving 99.99% database availability.', 'Replaced ASP.NET Web Forms with Java microservices and a Next.js/React frontend.', 'Cut UI load times by 50% and API response times by 30%.'], tags: ['JAVA', 'NEXT.JS', 'POSTGRESQL', 'RABBITMQ']
+      bullets: ['Migrated SQL Server to PostgreSQL with RabbitMQ synchronization, achieving 99.99% database availability.', 'Replaced ASP.NET Web Forms with Java microservices and a Next.js/React frontend.'], tags: ['JAVA', 'NEXT.JS', 'POSTGRESQL', 'RABBITMQ', 'MICROSERVICES', 'REACT']
     },
     {
       year: '2024', short: 'GIGA', title: 'Founding Software Engineer', organization: 'GigaIntel Innovations', location: 'Delhi / Remote', kind: 'EXPERIENCE', mark: 'GI',
-      summary: 'Moved closer to zero-to-one product building as the founding engineer for an intelligent trademark-search product.',
-      bullets: ['Built a trademark similarity-search platform and its React/Next.js interface.', 'Reduced researchers’ manual trademark review time by 70%.'], tags: ['PYTHON', 'NEXT.JS', 'REACT', 'SEARCH']
+      summary: 'Exploration phase, Moved closer to zero-to-one product building as the founding engineer for an intelligent trademark-search product.',
+      bullets: ['We were building a trademark similarity-search platform and its React/Next.js interface.', 'My introduction to research, what to search and how to search effectively.'], tags: ['PYTHON', 'NEXT.JS', 'REACT', 'SEARCH']
     },
     {
       year: '2024', short: 'PALSPAY', title: 'Freelance Software Engineer', organization: 'Palspay - Expense Splitting', location: 'Delhi / Remote', kind: 'EXPERIENCE', mark: 'P',
@@ -58,7 +58,7 @@
     {
       year: '2024-26', short: 'BITS', title: 'M.Tech. Artificial Intelligence & Machine Learning', organization: 'BITS Pilani - WILP', location: 'Pilani, India', kind: 'EDUCATION', logo: '/logos/bits-pilani.png',
       summary: 'Deepened the theory behind the intelligent systems I was already helping build in practice.',
-      bullets: ['Postgraduate study in artificial intelligence and machine learning.', 'Bridged academic ML foundations with hands-on work in evaluation, reinforcement learning, and RAG.'], tags: ['AI / ML', 'REINFORCEMENT LEARNING', 'WILP']
+      bullets: ['Postgraduate study in artificial intelligence and machine learning.', 'Fell in Love with computer science again, learned the mathematics behind the intelligence.', 'Built multiple projects exploring various AI/ML applications, one ], tags: ['AI / ML', 'REINFORCEMENT LEARNING']
     }
   ];
 

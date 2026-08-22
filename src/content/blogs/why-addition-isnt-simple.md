@@ -1,5 +1,5 @@
 ---
-title: "CPU doesn't do additions like we do"
+title: "CPU don't do additions like us"
 date: "2026-08-22"
 excerpt: "A visual tour of the carry bit: why it makes addition slow, how carry lookahead works, and why carry-select adders still matter."
 tags: ["Computer Architecture", "Logic Gates"]
