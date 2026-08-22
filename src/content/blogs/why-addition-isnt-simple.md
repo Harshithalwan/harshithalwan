@@ -1,7 +1,7 @@
 ---
 title: "CPU don't do additions like us"
 date: "2026-08-22"
-excerpt: "A visual tour of the carry bit: why it makes addition slow, how carry lookahead works, and why carry-select adders still matter."
+excerpt: "A visual tour of the carry bit: why it makes addition slow, how carry look-ahead works, and why carry-select adders still matter."
 tags: ["Computer Architecture", "Logic Gates"]
 ---
 
@@ -48,7 +48,7 @@ That is a poor fit for a wide CPU addition. A 64-bit adder should not have to wa
 
 If we want to make the additions faster, we need a way so the left most bits don't have to wait for all the calculations on its right to get completed. We need a way to calculate the carry early.
 
-Carry lookahead is the answer. It calculates the carry for all bit columns in a single go.
+Carry look-ahead is the answer. It calculates the carry for all bit columns in a single go.
 
 How does it do it ? This is where the addition gets little complicated. Rather than waiting to learn whether a carry arrives, each bit column first reports two facts about itself:
 
@@ -56,7 +56,7 @@ How does it do it ? This is where the addition gets little complicated. Rather t
 - **Propagate (P):** this bit column will pass an incoming carry to the next column. e.g. `1 + 0` and `0 + 1` propagates. if either of the bit is 1 then if current column will create a carry for the next column depends upon the carry it received. we can also write it as `P = A XOR B`.
 
 Using these 2 values we can calculate the carry value for each column. The right most column doesn't have a carry so `C₀ = 0`, carry for 2nd column depends upon the rightmost column and we can calculate it with `C₁ = G₀ + P₀C₀` i.e. `C₁` would be 1 if the right column generated a carry or it propagated it's carry of `1` (In this case since `C₀ = 0` we can also say `C₁ = G₀`). 
-Similary we can write the expressions for all columns.
+Similarly we can write the expressions for all columns.
 
 `C₀ = 0`  
 `C₁ = G₀ + P₀C₀`  
@@ -89,7 +89,7 @@ Notice the difference: first every bit produces its P/G signals in parallel; the
 
 ## Why not look ahead across the whole CPU word?
 
-The equations get unwieldy very quickly. In our example 4th column carry is `C₃ = G₂ + P₂G₁ + P₂P₁G₀ + P₂P₁P₀C₀`. That would be 3 OR operations and 6 AND operations (With a requirement of a 4 input AND gate). A direct 64-bit lookahead expression require lot of logic gates with increasing input size. Those costs can make the circuit complex, larger, and more power-hungry than the simple equation suggests.
+The equations get unwieldy very quickly. In our example 4th column carry is `C₃ = G₂ + P₂G₁ + P₂P₁G₀ + P₂P₁P₀C₀`. That would be 3 OR operations and 6 AND operations (With a requirement of a 4 input AND gate). A direct 64-bit look-ahead expression require lot of logic gates with increasing input size. Those costs can make the circuit complex, larger, and more power-hungry than the simple equation suggests.
 
 Real adders therefore use **hierarchy**. A small group—often four bits—computes its own group-propagate and group-generate signals. Another layer looks ahead between groups. The carry path becomes a shallow tree instead of one enormous gate or a 64-stage line.
 
@@ -97,6 +97,6 @@ Real adders therefore use **hierarchy**. A small group—often four bits—compu
 
 Another practical compromise is the **carry-select adder**. Split a wide number into blocks. The first block computes normally. Every later block computes *two* possible answers simultaneously: one assuming carry-in is 0, another assuming it is 1. When the real carry arrives, a multiplexer selects the already-computed answer.
 
-That trades duplicate adders and multiplexers for speed. Carry lookahead predicts carries through logic; carry select prepares for both possibilities and chooses late. Modern CPU adders often combine these ideas plus other refinements such as prefix trees to hit a balance of latency, complexity, and power.
+That trades duplicate adders and multiplexers for speed. Carry look-ahead predicts carries through logic; carry select prepares for both possibilities and chooses late. Modern CPU adders often combine these ideas plus other refinements such as prefix trees to hit a balance of latency, complexity, and power.
 
 Addition itself is cheap. Waiting for information is expensive. CPU design is largely the craft of arranging logic so that as little as possible has to wait.
