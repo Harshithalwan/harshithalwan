@@ -6,12 +6,11 @@ type Theme = 'light' | 'dark';
 function createThemeStore() {
   const getInitialTheme = (): Theme => {
     if (!browser) return 'light';
-    
+
     const stored = localStorage.getItem('theme');
     if (stored === 'dark' || stored === 'light') return stored;
-    
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
-    
+
+    // Default to light theme unless the user explicitly chose dark.
     return 'light';
   };
 
