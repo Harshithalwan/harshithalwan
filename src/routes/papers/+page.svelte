@@ -10,13 +10,14 @@
 
 <div class="container-narrow py-12">
   <section class="mb-12">
-    <h1 class="text-4xl font-serif font-bold mb-4">Technical Papers</h1>
+    <h1 class="text-4xl font-serif font-bold mb-4">Papers Shelf</h1>
     <p class="text-lg text-[var(--color-text-muted)]">
-      In-depth analysis and summaries of research papers I'm reading.
+      Page in-progress. It'll have summaries and analysis of research papers I'm reading.
     </p>
   </section>
 
-  {#if data.papers.length === 0}
+  // add back the check once ready data.papers.length === 0
+  {#if true}
     <div class="text-center py-12">
       <p class="text-[var(--color-text-muted)]">No papers analyzed yet. Check back soon!</p>
     </div>
